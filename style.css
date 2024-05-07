@@ -2,6 +2,10 @@
   --standard-font-size: 13px;
   --sm-font-size: 12px;
   --lg-font-size: 14px;
+
+  --primary-color: #24426f;
+  --secondary-color: #3081c9;
+  --white-color: #ffffff;
 }
 
 body {
@@ -15,9 +19,9 @@ body {
 
 .header {
   display: block;
-  background-color: #24426f;
+  background-color: var(--primary-color);
   min-width: 1125px;
-  color: #ffffff;
+  color: var(--white-color);
 
   a,
   a:visited {
@@ -36,7 +40,7 @@ body {
 
     .header__headline {
       display: flex;
-      background-color: #24426f;
+      background-color: var(--primary-color);
       width: 1125px;
       margin-inline: auto;
       flex: auto;
@@ -51,7 +55,7 @@ body {
         column-gap: 12px;
 
         .header__title {
-          fill: #ffffff;
+          fill: var(--white-color);
         }
         .header__subtitle {
           color: #bfc9d7;
@@ -120,11 +124,11 @@ body {
             width: 30px;
             height: 30px;
             border: none;
-            background-color: #3081c9;
+            background-color: var(--secondary-color);
             border-radius: 0 4px 4px 0;
             svg {
-              stroke: #ffffff;
-              fill: #3081c9;
+              stroke: var(--white-color);
+              fill: var(--secondary-color);
             }
           }
         }
@@ -164,7 +168,7 @@ body {
       }
       /* 現在の表示ページ「プレスリリース」であることを強調するために白にする */
       li:first-of-type {
-        color: #ffffff;
+        color: var(--white-color);
       }
       li:last-of-type::before {
         content: none;
@@ -173,14 +177,14 @@ body {
         padding-right: 0px;
       }
       li:hover {
-        color: #ffffff;
+        color: var(--white-color);
       }
     }
   }
 
   .header__category {
     color: #294c7a;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +192,7 @@ body {
     font-size: var(--standard-font-size);
     margin: 0;
     padding: 12px 0 12px 0;
+    border-bottom: 1px solid #e4e4e4;
 
     li {
       list-style: none;
