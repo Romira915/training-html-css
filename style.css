@@ -72,10 +72,7 @@ body {
           background-color: #345584;
           display: flex;
           column-gap: 10px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          padding-left: 14px;
-          padding-right: 14px;
+          padding: 5px 14px;
           font-size: var(--standard-font-size);
           border-radius: 4px;
           margin: 0;
