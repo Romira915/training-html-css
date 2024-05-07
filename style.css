@@ -32,7 +32,7 @@ body {
     width: 1125px;
     padding: 12px;
     gap: 12px;
-    margin: auto;
+    margin: 0 auto 0 auto;
 
     .header__headline {
       display: flex;
@@ -162,6 +162,7 @@ body {
         bottom: 0;
         margin: auto;
       }
+      /* 現在の表示ページ「プレスリリース」であることを強調するために白にする */
       li:first-of-type {
         color: #ffffff;
       }
@@ -174,6 +175,28 @@ body {
       li:hover {
         color: #ffffff;
       }
+    }
+  }
+
+  .header__category {
+    color: #294c7a;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: var(--standard-font-size);
+    margin: 0;
+    padding: 12px 0 12px 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+      text-align: center;
+    }
+    /* 現在のページ「カテゴリー：総合」をboldにするためだけで特に意味はない */
+    li:first-of-type {
+      font-weight: bold;
     }
   }
 }
