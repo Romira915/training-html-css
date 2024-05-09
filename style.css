@@ -6,6 +6,8 @@
 
   --primary-color: #24426f;
   --secondary-color: #3081c9;
+  --secondary-500-color: #4b98d6;
+  --secondary-700-color: #3879b7;
   --white-color: #ffffff;
   --gray-color: #a2a2a2;
   --black-color: #000000;
@@ -344,10 +346,14 @@ a:visited {
       width: 110px;
       height: 37px;
       color: var(--white-color);
-      background-color: var(--secondary-color);
+      background-color: var(--secondary-700-color);
       border: none;
       border-radius: 3px;
       box-shadow: 0 1px 2px var(--black-color);
+      cursor: pointer;
+    }
+    .new-pressrelease__more:hover {
+      background-color: var(--secondary-500-color);
     }
   }
 }
