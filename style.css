@@ -2,6 +2,7 @@
   --standard-font-size: 13px;
   --sm-font-size: 12px;
   --lg-font-size: 14px;
+  --xl-font-size: 18px;
   --xxl-font-size: 24px;
 
   --primary-color: #24426f;
@@ -10,7 +11,9 @@
   --secondary-700-color: #3879b7;
   --white-color: #ffffff;
   --gray-color: #a2a2a2;
+  --gray-white-color: #f1f1f1;
   --black-color: #000000;
+  --black-light-color: #3b3b3b;
 }
 
 body {
@@ -320,7 +323,7 @@ a:visited {
   .new-pressrelease__head2 {
     font-size: var(--xxl-font-size);
     font-weight: bold;
-    margin: 10px 0;
+    margin: 0;
   }
 
   h3 {
@@ -428,10 +431,61 @@ a:visited {
   display: block;
   height: 0;
   width: 380px;
-  border-bottom: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--gray-white-color);
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+.keyword-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--gray-white-color);
+
+  .keyword-section__head2 {
+    font-size: var(--xl-font-size);
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.keyword__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 308px;
+  row-gap: 9px;
+  column-gap: 12px;
+  margin: 0;
+  color: var(--black-light-color);
+
+  .keyword__word {
+    font-size: var(--sm-font-size);
+    background-color: var(--gray-white-color);
+    padding: 1px 8px;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .keyword__word:hover {
+    color: var(--black-color);
+  }
+
+  .keyword__more {
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-white-color);
+  }
+  .keyword__more:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
 }
